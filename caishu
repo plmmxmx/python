@@ -1,0 +1,25 @@
+import random
+x=1
+y=101
+s=random.randint(x,y)
+
+
+b=input("请输入1-100的一个整数")
+c=int(b)
+while c != s:
+    
+    if c<s:
+        
+        print('小了')
+        b=input("请输入1-100的一个整数")
+        c=int(b)
+        
+    elif c>s:
+        print('大了')
+        b=input("请输入1-100的一个整数")
+        c=int(b)
+else: 
+    
+       
+    print('ture')
+
