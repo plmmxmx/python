@@ -1,0 +1,19 @@
+x=input("请输入一个数字>>")
+y=input("请再输入一个数字>>")
+c=input("请输入你要进行的运算>>")
+
+a=int(x)
+b=int(y)
+
+if c == "+": 
+    print("两数之和为：", a+b)
+elif c == '-':
+    print("两数之差为：", a-b)
+elif c == '*':
+    print("两数之积为：", a*b)
+elif c == '/':
+    print("两数之商为：", a/b)
+else :
+    print("只能输入+ - * /")
+
+
