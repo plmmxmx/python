@@ -1,0 +1,30 @@
+n1=input("请输入球队一的名称>>")
+n2=input("请输入球队二的名称>>")   
+num1=0
+num2=0
+q1=[]
+q2=[]
+c="恭喜球队%s获胜"
+while True:
+    name=input("输入的分球队名，输入game over 比赛结束")
+    num=int(input("请输入本次得分"))
+    if name == "game over":
+        if num1 > num2:
+            print(c %n1)
+        elif num1 < num2:
+            print(c %n2)
+        else :
+            print("平局 ！进入加时赛")
+        break
+    elif name == n1:
+        
+        q1.extend(str(num))
+        num1 = num1+num
+    elif name == n2:
+        
+        q2.extend(str(num))
+        num2 = num2+num
+    else:
+        print("请按要求输入指令")
+print("球队一各次得分>>", q1)
+print("球队二各次得分>>", q2)
